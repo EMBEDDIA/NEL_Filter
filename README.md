@@ -8,9 +8,9 @@ This filter been used in diverse pubications. However, for each publication, we 
 
 * [Robust Named Entity Recognition and Linking on Historical Multilingual Documents](http://ceur-ws.org/Vol-2696/paper_171.pdf) (CLEF-HIPE): Two filters are provided, A and B. The former was used for RUN 1 and RUN 2, while the latter was used for RUN 3. The main difference is that filter B uses information from Wikidata. Wikidata helps us to retrieve some date of births that couldn't be found in DBpedia and determine whether the entry was a disambiguation page. Both filters use the format used for CLEF-HIPE 2020.
 
-* [Exploratory Analysis of News Sentiment Using Subgroup Discovery] (https://www.aclweb.org/anthology/2021.bsnlp-1.7/) (BSNLP): This version is based on CLEF-HIPE_A of the filter and introduced some improvements in the code, such as the liberty of choosing the columns in which the NER and EL data are found. We do not recommend to use this code.
+* [Exploratory Analysis of News Sentiment Using Subgroup Discovery](https://www.aclweb.org/anthology/2021.bsnlp-1.7/) (BSNLP): This version is based on CLEF-HIPE_A of the filter and introduced some improvements in the code, such as the liberty of choosing the columns in which the NER and EL data are found. We do not recommend to use this code.
 
-* [Entity Linking for Historical Documents: Challenges and Solutions] (https://link.springer.com/chapter/10.1007/978-3-030-64452-9_19) (ICADL): This is the current version of the filter. It contains the innovations introduced for BSNLP, fixes multiples issues in the logic behind and add the capacity of querying DBpedia Chapters.
+* [Entity Linking for Historical Documents: Challenges and Solutions](https://link.springer.com/chapter/10.1007/978-3-030-64452-9_19) (ICADL): This is the current version of the filter. It contains the innovations introduced for BSNLP, fixes multiples issues in the logic behind and add the capacity of querying DBpedia Chapters.
 
 # Input format
 
