@@ -1,10 +1,10 @@
 # Post-processing filter for Entity Linking
 
-This program was created for filtering entity linking candidates and reorder them based on heuristics and data coming from DBpedia in most cases. The filter tries to delete illogical candidates, such as disambiguation pages or people born after the publication of the document (if dates are available). It can improve the global performance of an Entity Linking system.
+This program was created for filtering entity linking candidates and reorder them based on heuristics and data coming from DBpedia in most cases. The filter tries to delete improbable candidates, such as disambiguation pages or people born after the publication of the document (if dates are available). It can improve the global performance of an Entity Linking system.
 
 # Where it has been used?
 
-This filter been used in diverse pubications. However, for each publication, we have modified slightly the code to improve the performance on the corpora analyzed. Later, we will make available an improved version of the filter once the related work has been published.
+This filter been used in diverse pubications. However, for each publication, we have modified slightly the code to improve the performance on the corpora analyzed. Later, we will make available an better version of the filter once the related work has been published.
 
 * [Robust Named Entity Recognition and Linking on Historical Multilingual Documents](http://ceur-ws.org/Vol-2696/paper_171.pdf) (CLEF-HIPE): Two filters are provided, A and B. The former was used for RUN 1 and RUN 2, while the latter was used for RUN 3. The main difference is that filter B uses information from Wikidata. Wikidata helps us to retrieve some date of births that couldn't be found in DBpedia and determine whether the entry was a disambiguation page. Both filters use the format used for CLEF-HIPE 2020.
 
