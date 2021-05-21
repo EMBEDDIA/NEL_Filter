@@ -4,7 +4,7 @@ This program was created for filtering entity linking candidates and reorder the
 
 # Where it has been used?
 
-This filter been used in diverse pubications. However, for each publication, we have modified slightly the code to improve the performance on the corpora analyzed. Later, we will make available an better version of the filter once the related work has been published.
+This filter been used in diverse pubications. However, for each publication, we have modified slightly the code to improve the performance on the corpora analyzed. Later, we will make available a better version of the filter once the related work has been published.
 
 * [Robust Named Entity Recognition and Linking on Historical Multilingual Documents](http://ceur-ws.org/Vol-2696/paper_171.pdf) (CLEF-HIPE): Two filters are provided, A and B. The former was used for RUN 1 and RUN 2, while the latter was used for RUN 3. The main difference is that filter B uses information from Wikidata. Wikidata helps us to retrieve some date of births that couldn't be found in DBpedia and determine whether the entry was a disambiguation page. Both filters use the format used for CLEF-HIPE 2020.
 
