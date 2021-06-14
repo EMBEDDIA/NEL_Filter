@@ -56,3 +56,7 @@ Please use this publication for citing this work:
 # FuzzyWuzzy vs RapidFuzz
 
 The original implementation of the code used [FuzzyWuzzy](https://github.com/seatgeek/fuzzywuzzy). However, as this library is not compatible with the MIT license, we migrated the library to [RapidFuzz](https://github.com/maxbachmann/RapidFuzz/). RapidFuzz implements the same ideas of FuzzyWuzzy and fixes some the issues. Although there shouldn't be great changes on its performance, it is possible to return to the original library by modifing the source code.
+
+# DBpedia Chapters
+
+Some of the DBpedia chapters have become offline during 2020-2021, and we do not know if they will come online again. Thus, there might be some issues in specific configurations. The newest version of the code will fix that, as it changes the logic behind the use of DBpedia Chapters.
