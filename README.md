@@ -60,3 +60,8 @@ The original implementation of the code used [FuzzyWuzzy](https://github.com/sea
 # DBpedia Chapters
 
 Some of the DBpedia chapters have become offline during 2020-2021, and we do not know if they will come online again. Thus, there might be some issues in specific configurations. The newest version of the code will fix that, as it changes the logic behind the use of DBpedia Chapters.
+
+# Parent projects
+
+This work is is result of the European Union H2020 Project [Embeddia](http://embeddia.eu/) and [NewsEye](https://www.newseye.eu/). Embeddia is a project that creates NLP tools that focuses on European under-represented languages and that has for objective to improve the accessibility of these tools to the general public and to media enterprises. Visit [Embeddia's Github](https://github.com/orgs/EMBEDDIA/) to discover more NLP tools and models created within this project. NewsEye is a project that develops methods and tools for digital humanities that can enhance the access to historical newspapers to a wide range of users. Visit [NewsEye's Github](https://github.com/newseye) to discover the range of tools developed for the digital humanities. 
+
