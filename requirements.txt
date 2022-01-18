@@ -1,5 +1,10 @@
 certifi==2021.10.8
+isodate==0.6.1
 numpy==1.22.1
+pyparsing==3.0.6
 rapidfuzz==1.9.1
+rdflib==6.1.1
 regex==2021.11.10
+six==1.16.0
+SPARQLWrapper==1.8.5
 weighted-levenshtein==0.2.1
