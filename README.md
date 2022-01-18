@@ -4,13 +4,17 @@ This program was created for filtering entity linking candidates and reorder the
 
 # Where it has been used?
 
-This filter been used in diverse pubications. However, for each publication, we have modified slightly the code to improve the performance on the corpora analyzed. Later, we will make available a better version of the filter once the related work has been published.
+This filter been used in diverse pubications:
 
-* [Robust Named Entity Recognition and Linking on Historical Multilingual Documents](http://ceur-ws.org/Vol-2696/paper_171.pdf) (CLEF-HIPE): Two filters are provided, A and B. The former was used for RUN 1 and RUN 2, while the latter was used for RUN 3. The main difference is that filter B uses information from Wikidata. Wikidata helps us to retrieve some date of births that couldn't be found in DBpedia and determine whether the entry was a disambiguation page. Both filters use the format used for CLEF-HIPE 2020.
+* [MELHISSA: a multilingual entity linking architecture for historical press articles](https://doi.org/10.1007/s00799-021-00319-6)
 
-* [Exploratory Analysis of News Sentiment Using Subgroup Discovery](https://www.aclweb.org/anthology/2021.bsnlp-1.7/) (BSNLP): This version is based on CLEF-HIPE_A and introduced some improvements in the code, such as the liberty of choosing the columns in which the NER and EL data are found. Nonetheless, we found certain issues with the logic used and therefore we do not recommend to use this code.
+* [Robust Named Entity Recognition and Linking on Historical Multilingual Documents](http://ceur-ws.org/Vol-2696/paper_171.pdf)
 
-* [Entity Linking for Historical Documents: Challenges and Solutions](https://link.springer.com/chapter/10.1007/978-3-030-64452-9_19) (ICADL): This is the current version of the filter. It contains the innovations introduced for BSNLP, fixes multiples issues in the logic behind and add the capacity of querying DBpedia Chapters.
+* [Exploratory Analysis of News Sentiment Using Subgroup Discovery](https://www.aclweb.org/anthology/2021.bsnlp-1.7/)
+
+* [Entity Linking for Historical Documents: Challenges and Solutions](https://link.springer.com/chapter/10.1007/978-3-030-64452-9_19)
+
+The current version is the one used in our latest publication "MELHISSA: a multilingual entity linking architecture for historical press articles". For previous versions, please visit the [old_versions](https://github.com/EMBEDDIA/NEL_Filter/tree/old_versions) branch. 
 
 # Input format
 
@@ -39,27 +43,33 @@ Furthermore, the filter uses the data provided by the NER tags to process the ca
 
 Please use this publication for citing this work:
 ```
-@inproceedings{linhares_pontes_entity_2020,
-	address = {Kyoto, Japan},
-	title = {Entity {Linking} for {Historical} {Documents}: {Challenges} and {Solutions}},
-	isbn = {978-3-030-64451-2},
-	doi = {10.1007/978-3-030-64452-9_19},
-	booktitle = {Proceedings of the 22nd {International} {Conference} on {Asia}-{Pacific} {Digital} {Libraries} ({ICADL} 2020)},
-	publisher = {Springer International Publishing},
-	author = {Linhares Pontes, Elvys and Cabrera-Diego, Luis Adrián and Moreno, Jose G. and Boros, Emanuela and Hamdi, Ahmed and Sidère, Nicolas and Coustaty, Mickaël and Doucet, Antoine},
-	editor = {Ishita, Emi and Pang, Natalie Lee San and Zhou, Lihong},
-	year = {2020},
-	pages = {215--231}
+@Article{LinharesPontes2021,
+	author={Linhares Pontes, Elvys
+	and Cabrera-Diego, Luis Adrián
+	and Moreno, Jose G.
+	and Boros, Emanuela
+	and Hamdi, Ahmed
+	and Doucet, Antoine
+	and Sidere, Nicolas
+	and Coustaty, Mickaël},
+	title={MELHISSA: a multilingual entity linking architecture for historical press articles},
+	journal={International Journal on Digital Libraries},
+	year={2021},
+	month={Nov},
+	day={29},
+	issn={1432-1300},
+	doi={10.1007/s00799-021-00319-6},
+	url={https://doi.org/10.1007/s00799-021-00319-6}
 }
 ```
 
-# FuzzyWuzzy vs RapidFuzz
-
-The original implementation of the code used [FuzzyWuzzy](https://github.com/seatgeek/fuzzywuzzy). However, as this library is not compatible with the MIT license, we migrated the library to [RapidFuzz](https://github.com/maxbachmann/RapidFuzz/). RapidFuzz implements the same ideas of FuzzyWuzzy and fixes some the issues. Although there shouldn't be great changes on its performance, it is possible to return to the original library by modifing the source code.
-
 # DBpedia Chapters
 
-Some of the DBpedia chapters have become offline during 2020-2021, and we do not know if they will come online again. Thus, there might be some issues in specific configurations. The newest version of the code will fix that, as it changes the logic behind the use of DBpedia Chapters.
+Some of the DBpedia chapters have become offline during 2020-2021, and we do not know if they will come online again. Thus, there might be some issues in specific configurations. This version should be more robust if a chapter becomes offile.
+
+# Dependencies
+
+This project has been tested with Python 3.8. The requirements can be found in `requirements.txt` and can be installed using `pip`.
 
 # Parent projects
 
