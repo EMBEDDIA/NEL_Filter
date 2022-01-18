@@ -14,7 +14,7 @@ This filter been used in diverse pubications:
 
 * [Entity Linking for Historical Documents: Challenges and Solutions](https://link.springer.com/chapter/10.1007/978-3-030-64452-9_19)
 
-The current version is the one used in our latest publication "MELHISSA: a multilingual entity linking architecture for historical press articles". For previous versions, please visit the [old_versions](https://github.com/EMBEDDIA/NEL_Filter/tree/old_versions) branch. 
+	The current version is the one used in our latest publication _MELHISSA: a multilingual entity linking architecture for historical press articles_. For previous versions, please visit the [old_versions](https://github.com/EMBEDDIA/NEL_Filter/tree/old_versions) branch. 
 
 # Input format
 
@@ -42,6 +42,7 @@ Furthermore, the filter uses the data provided by the NER tags to process the ca
 # Citing
 
 Please use this publication for citing this work:
+
 ```
 @Article{LinharesPontes2021,
 	author={Linhares Pontes, Elvys
@@ -63,9 +64,28 @@ Please use this publication for citing this work:
 }
 ```
 
+If you use the Weighted-Levenshtein and you use the weights provided in the code, please cite as well:
+
+```
+@Inproceedings{8791206,
+  author={Nguyen, Thi-Tuyet-Hai and Jatowt, Adam and Coustaty, Mickael and Nguyen, Nhu-Van and Doucet, Antoine},
+  booktitle={2019 ACM/IEEE Joint Conference on Digital Libraries (JCDL)}, 
+  title={Deep Statistical Analysis of OCR Errors for Effective Post-OCR Processing}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={29-38},
+  doi={10.1109/JCDL.2019.00015}}
+
+```
+
 # DBpedia Chapters
 
 Some of the DBpedia chapters have become offline during 2020-2021, and we do not know if they will come online again. Thus, there might be some issues in specific configurations. This version should be more robust if a chapter becomes offile.
+
+# Cached data
+
+We provide the cached data that was used for the latest publication. The use of a cache decreases the number of queries to DBpedia and WikiData, and therefore increases the processing speed.
 
 # Dependencies
 
