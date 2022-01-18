@@ -14,7 +14,7 @@ This filter been used in diverse pubications:
 
 * [Entity Linking for Historical Documents: Challenges and Solutions](https://link.springer.com/chapter/10.1007/978-3-030-64452-9_19)
 
-	The current version is the one used in our latest publication _MELHISSA: a multilingual entity linking architecture for historical press articles_. For previous versions, please visit the [old_versions](https://github.com/EMBEDDIA/NEL_Filter/tree/old_versions) branch. 
+	The current version is the one used in our latest publication _MELHISSA: a multilingual entity linking architecture for historical press articles_. For previous versions, please visit the [old_versions](https://github.com/EMBEDDIA/NEL_Filter/tree/old_versions) branch or you can download  directly the files from [here](https://github.com/EMBEDDIA/NEL_Filter/releases/tag/EMBEDDIA_D2.7). 
 
 # Input format
 
