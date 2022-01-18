@@ -1,4 +1,4 @@
-from Final_Journal.utils.Sparql.SparqlObject import SparqlObject
+from Filter.utils.Sparql.SparqlObject import SparqlObject
 
 
 class SparqlDBPedia(SparqlObject):

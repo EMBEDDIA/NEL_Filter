@@ -2,8 +2,8 @@ import regex
 import time
 import logging
 
-from Final_Journal.utils.WikiDataEntry import WikiDataEntry
-from Final_Journal.utils.Sparql.SparqlObject import SparqlObject
+from Filter.utils.WikiDataEntry import WikiDataEntry
+from Filter.utils.Sparql.SparqlObject import SparqlObject
 
 
 class SparqlWikiData(SparqlObject):
