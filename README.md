@@ -1,6 +1,6 @@
 # Post-processing filter for (Named) Entity Linking
 
-This program was created for filtering entity linking candidates and reorder them based on heuristics and data coming from DBpedia in most cases. The filter tries to delete improbable candidates, such as disambiguation pages or people born after the publication of the document (if dates are available). It can improve the global performance of an Entity Linking system.
+This program was created for filtering entity linking candidates and reorder them based on heuristics and data coming from Wikidata and DBpedia, inckuding DBpedia Chapters. The filter tries to delete improbable candidates, such as disambiguation pages or people born after the publication of the document (if dates are available). It can improve the global performance of an Entity Linking system.
 
 # Where it has been used?
 
