@@ -2,6 +2,11 @@
 
 This program was created for filtering entity linking candidates and reorder them based on heuristics and data coming from Wikidata and DBpedia, including DBpedia Chapters. The filter tries to delete improbable candidates, such as disambiguation pages or people born after the publication of the document (if dates are available). It can improve the global performance of an Entity Linking system.
 
+We present here below an [example](https://link.springer.com/article/10.1007/s00799-021-00319-6#Fig5) of how the filter can remove certain candidates:
+
+![Example_filter](https://user-images.githubusercontent.com/17121539/151363177-7df28ecd-9c4d-4e7b-8f5b-d17f77aa3b9c.jpg)
+
+
 # Where it has been used?
 
 This filter been used in diverse pubications:
